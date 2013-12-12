@@ -7,7 +7,7 @@ public class Instantiation : MonoBehaviour {
 	
 	public Transform startMarker;
 	public Vector3 endMarker;
-	private int _totalCorrect = 2;
+	private int _totalCorrect = 1;
 	public float speed = 1.0F;
 	private float startTime;
 	public Transform target;
@@ -326,7 +326,7 @@ public class Instantiation : MonoBehaviour {
 				if(numCorrectCandies == _totalCorrect)
 				{
 					Debug.Log("reached max");
-					if(colorBand == 7)
+					if(colorBand == 8)
 					{
 						gameOver = 1;
 						PlayNurseryRhyme();
@@ -335,8 +335,6 @@ public class Instantiation : MonoBehaviour {
 					else{
 						SetRainbow(colorBand);
 					}
-					
-					
 				}
 			}
 			//executed = 0;
